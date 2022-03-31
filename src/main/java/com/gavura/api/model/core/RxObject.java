@@ -1,4 +1,4 @@
-package com.gavura.api.model;
+package com.gavura.api.model.core;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
