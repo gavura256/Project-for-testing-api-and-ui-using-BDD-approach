@@ -8,16 +8,16 @@ import io.restassured.specification.RequestSpecification;
 import java.util.HashMap;
 import java.util.Map;
 
-
-
 public class RqObject extends RxObject {
     public static final String BASE_URI = "https://petstore.swagger.io/v2";
+
 
     protected RequestSpecification requestSpecification;
 
     public RqObject(String rqName) {
         super(rqName);
         RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        this.requestSpecification = RestAssured.given();
     }
 
     protected void setBaseUri() {
